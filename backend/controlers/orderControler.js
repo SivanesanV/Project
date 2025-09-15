@@ -8,7 +8,7 @@ import userModel from "../models/userModels.js";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 //Placing user model in frontend
 const placeOrder = async (req, res) => {
-    const frontend_url = "http://localhost:5173"
+    const frontend_url = "https://front-end-vojb.onrender.com"
     try {
         const items = req.body.items;
         let totalAmount = 0;
